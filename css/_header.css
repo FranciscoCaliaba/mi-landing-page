@@ -1,6 +1,7 @@
 header {
     width: 100%;
     height: 100vh;
+    font-size: 85px;
 }
 .div1 {
     width: 50%;
@@ -8,17 +9,19 @@ header {
     float: left;
     background: rgb(238, 238, 238);
     background: radial-gradient(circle, rgba(238, 238, 238, 1) 0%, rgba(196, 196, 196, 1) 100%);
+    text-align: right;
 }
 .div2 {
     width: 50%;
     height: 200vh;
     float: right;
-    background: rgb(17,24,54);
-background: linear-gradient(90deg, rgba(17,24,54,1) 0%, rgba(43,55,96,1) 100%);
+    background: rgb(17, 24, 54);
+    background: linear-gradient(90deg, rgba(17, 24, 54, 1) 0%, rgba(43, 55, 96, 1) 100%);
+    text-align: left;
 }
 .nav1 {
     font-size: 24px;
-    min-height: 15vh;
+    min-height: 10vh;
     width: 80%;
     display: flex;
     align-items: center;
@@ -26,92 +29,63 @@ background: linear-gradient(90deg, rgba(17,24,54,1) 0%, rgba(43,55,96,1) 100%);
 }
 .nav2 {
     font-size: 24px;
-    min-height: 15vh;
+    min-height: 10vh;
     width: 80%;
     display: flex;
     align-items: center;
     justify-content: flex-end;
 }
-.div1 > .nav1 > h2 {
-    font-size: 24px;
-    color: black;
-}
-.div2 > .nav2 > h2 {
-    font-size: 24px;
-    color: orange;
-}
-header h3 {
-    font-size: 120px;
-    text-align: center;
+
+.container {
+    width: 100%;
+    height: 100vh;
 }
 
-.div1 h3:nth-child(2) {
-    /* Full Stack */
-    text-align: right;
-    margin-top: 5.5%;
-    margin-right: 1.5%;
-    color: black;
-    font-size: 85px;
+h3 {
+    font-size: 95px;
 }
-.div1 h3:nth-child(3) {
-    /* growth-dri */
-    text-align: right;
-    margin-right: 2.5%;
-    margin-top: 12%;
+
+/* f85206 */
+
+.blanco {
+    color: white;
+}
+
+.naranja {
     color: #f85206;
-    font-size: 85px;
-}
-.div1 h3:nth-child(4) {
-    /* working-to-create */
-    text-align: right;
-    margin-right: 1.5%;
-    color: black;
-    margin-top: 12%;
-    font-size: 85px;
 }
 
-.div2 h3:nth-child(2) {
-    /* designer of */
-    margin-top: 5.5%;
-    margin-left: 1.5%;
-    text-align: left;
-    color: orange;
-    font-size: 85px;
+.mr {
+    margin-right: 10px;
 }
-.div2 h3:nth-child(3) {
-    /* ven Startups */
-    position: relative;
-    right: 50px;
-    margin-top: 12%;
-    margin-left: 2.5%;
-    text-align: left;
-    color: white;
-    font-size: 85px;
+
+.ml {
+    margin-left: 10px;
 }
-.div2 h3:nth-child(4) {
-    /* Products & Brands */
-    text-align: left;
-    margin-left: 1.5%;
-    color: orange;
-    margin-top: 12%;
-    font-size: 85px;
+
+.products {
+    margin-right: 50px;
 }
+.growth {
+    margin-right: 20px;
+}
+
 span {
-    /* V right-side */
+    display: inline;
     position: relative;
     color: white;
+    right: 22px;
 }
 
 span:before {
-    /* V left-side */
     content: attr(data-char);
     position: absolute;
-    width: 53%;
+    width: 50%;
     overflow: hidden;
     color: #f85206;
 }
 
-span.blanco {
-    /* words: of,Brands */
-    color: white;
+.brands {
+    position: relative;
+    right: 9px;
 }
